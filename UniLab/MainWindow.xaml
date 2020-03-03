@@ -7,6 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button x:Name="LogInBtn" Click="LogInBtn_Click" Content="Iniciar Sesion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="310,213,0,0" Height="24"/>
+        <Button x:Name="RegistrateBtn" Content="Registrarse" HorizontalAlignment="Left" VerticalAlignment="Top" Width="140" Margin="310,258,0,0" Height="24"/>
+
+        <TextBox x:Name="UserNameTxtB" HorizontalAlignment="Left" Height="19" Margin="310,118,0,0" TextWrapping="Wrap" Text="Nombre de usuario" VerticalAlignment="Top" Width="140" RenderTransformOrigin="1.988,0.548"/>
+        <TextBox x:Name="PasswordTxtB" HorizontalAlignment="Left" Height="21" Margin="310,158,0,0" TextWrapping="Wrap" Text="Clave" VerticalAlignment="Top" Width="140"/>
+
     </Grid>
 </Window>

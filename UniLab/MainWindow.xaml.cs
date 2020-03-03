@@ -25,5 +25,30 @@ namespace UniLab
         {
             InitializeComponent();
         }
+        private void LogInBtn_Click(object sender, EventArgs e)
+        {
+
+
+            var usersAndPasswords = new Dictionary<string, string>();
+            Enumerable.Range(0, 10).ToList().ForEach((x) =>
+            {
+                usersAndPasswords.Add($"usuario{x}", $"clave{x}");
+            });
+
+            if (usersAndPasswords.TryGetValue(UserNameTxtB.Text, out string passwrd) && passwrd == PasswordTxtB.Text)
+            {
+                this.Hide();
+                var newMenu = new menu();
+                newMenu.Show();
+
+                MessageBox.Show("ahorraste 5 metros cubicos de agua, felicitaciones");
+
+            }
+            else
+            {
+                MessageBox.Show("Tu clave o usuario son incorrectos, intenta de nuevo");
+            }
+
+        }
     }
 }
