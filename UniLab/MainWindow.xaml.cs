@@ -20,6 +20,7 @@ namespace UniLab
     /// </summary>
     public partial class MainWindow : Window
     {
+        //Esto es un comentario de test para git 
         public MainWindow()
         {
             InitializeComponent();
